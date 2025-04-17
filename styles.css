@@ -22,6 +22,7 @@ nav {
 
     background-color: skyblue;
     padding-top: 15px;
+    box-shadow: 1px 1px 5px gray;
 }
 h1 {
     padding-left: 40px;
@@ -45,30 +46,62 @@ header {
     flex-direction: column;
 
     background-color: rgba(128, 128, 128, 0.342);
+    box-shadow: 2px 2px 5px gray;
 }
 
 .top-header, .bottom-header {
     display: flex;
     flex: 1;
     justify-content: space-between;
+    align-items: center;
 
-    margin-left: 50px;
-    margin-right: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
 }
 
 .top-header {
-    margin-top: 15px;
+    padding-top: 20px;
+}
+.bottom-header {
+    padding-bottom: 20px;
+}
+
+label{
+    display: inline-block;
+    position: relative;
+    bottom: 13px;
+}
+
+input {
+    position: relative;
+    bottom: 25px;
+    left: 15px;
+
+    width: 45vw;
+    height: 2.3rem;
+
+    border: none;
+    border-radius: 20px;
 }
 
 .bell-side {
     display: flex;
-    gap: 40px;
+    gap: 30px;
+}
+.bell-side > img {
+    position: relative;
+    bottom: 15px;
 }
 .greeting-side {
     display: flex;
+    gap: 25px;
 }
 .bold{
     font-weight: bold;
+    font-size: 1.3rem;
+}
+.larger-name {
+    font-size: 1.7rem;
 }
 
 .avatar {
@@ -76,5 +109,15 @@ header {
 }
 
 .button-side {
-    align-self: center;
+    display: flex;
+    gap: 15px;
 }
+
+button {
+    height: 2.7rem;
+    width: 120px;
+    border-radius: 25px;
+    border: 1px solid gray;
+}
+
+
