@@ -18,7 +18,7 @@
     height: 100vh;
 
     display: grid;
-    grid-template-columns: 1fr 4fr;
+    grid-template-columns: minmax(320px, 1fr) minmax(1000px, 4fr);
     grid-template-rows: 1fr 5fr;
 }
 /* Side nav bar related element selectors */
@@ -32,6 +32,7 @@ nav {
     padding-top: 15px;
     box-shadow: 1px 1px 5px gray;
     color: white;
+
 }
 .dashboard {
     display: flex;   
@@ -211,4 +212,50 @@ h2 {
 #important-h2 {
     bottom: 45px;
     right: 25px;
+}
+
+.text-div {
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.507);
+    width: 80%;
+    margin: auto;
+}
+.text-div:not(:first-of-type) {
+    padding-top: 20px;
+}
+.text-div:last-of-type {
+    border: none;
+}
+
+h3, .small-text {
+    font-size: .9rem;
+}
+
+.trending {
+    position: relative;
+    bottom: 35px;
+    display: flex;
+    justify-content: space-evenly;
+    gap: 10px;
+    padding: 0px 15px 25px 25px;
+    flex-direction: column;
+    height: 100%;
+}
+
+.trending div {
+    display: flex;
+    gap: 15px;
+}
+
+.trending div > img {
+    border-radius: 50px;
+}
+
+.description {
+    color: rgb(85, 84, 84);
+}
+
+.avatar {
+    position: relative;
+    bottom: 16px;
 }
